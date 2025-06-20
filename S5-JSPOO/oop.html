@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //JavaScript Objects
+    let x ={
+        name:"John",
+        age:30
+    }
+    console.log(x.name);
+    console.log(x.age);
+
+    // Classes and Objects
+    class Animal{
+        constructor(customName , customColor  ){
+            <!-- console.log("new Object is Created !!"); -->
+            this.name = customName;
+            this.color = customColor;
+        }
+
+         move(){
+            console.log( this.name+"is moving...!");
+        }
+        jump(){
+            console.log( this.name+"is jumping...!");
+        }
+    }
+
+    let lion = new Animal("Lion-King","Yellow");
+    lion.move();
+    lion.jump();
+    let tigger = new Animal("Tigger-King","Orange");
+    tigger.move();
+    tigger.jump();
+    let dog = new Animal("Dog-King","White");
+    dog.move();
+    dog.jump();
+    console.log(lion.color);
+    console.log(tigger.color);
+    console.log(dog.color);
+
+
+    // 2 nd Exemple 
+    class Person{
+        constructor(name,age){
+            this.name = name;
+            this.age = age;
+        }
+         PrintInfos(){
+            console.log(this.name);
+            console.log(this.age);
+        }
+    }
+    Fakher=new Person("Fakher",22);
+    Fakher.PrintInfos();
+
+</script>
+</html>
